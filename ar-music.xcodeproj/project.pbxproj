@@ -7,25 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		948ED31D1FAD7F86006A06B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948ED31C1FAD7F86006A06B8 /* AppDelegate.swift */; };
-		948ED31F1FAD7F86006A06B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948ED31E1FAD7F86006A06B8 /* ViewController.swift */; };
-		948ED3221FAD7F86006A06B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948ED3201FAD7F86006A06B8 /* Main.storyboard */; };
-		948ED3241FAD7F86006A06B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 948ED3231FAD7F86006A06B8 /* Assets.xcassets */; };
-		948ED3271FAD7F86006A06B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948ED3251FAD7F86006A06B8 /* LaunchScreen.storyboard */; };
+		942FF79B1FAE4F5F0061DA5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942FF79A1FAE4F5F0061DA5C /* AppDelegate.swift */; };
+		942FF79D1FAE4F5F0061DA5C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 942FF79C1FAE4F5F0061DA5C /* art.scnassets */; };
+		942FF79F1FAE4F5F0061DA5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942FF79E1FAE4F5F0061DA5C /* ViewController.swift */; };
+		942FF7A21FAE4F5F0061DA5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942FF7A01FAE4F5F0061DA5C /* Main.storyboard */; };
+		942FF7A41FAE4F5F0061DA5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 942FF7A31FAE4F5F0061DA5C /* Assets.xcassets */; };
+		942FF7A71FAE4F5F0061DA5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942FF7A51FAE4F5F0061DA5C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		948ED3191FAD7F86006A06B8 /* music-map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "music-map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		948ED31C1FAD7F86006A06B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		948ED31E1FAD7F86006A06B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; tabWidth = 10; };
-		948ED3211FAD7F86006A06B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		948ED3231FAD7F86006A06B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		948ED3261FAD7F86006A06B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		948ED3281FAD7F86006A06B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		942FF7971FAE4F5F0061DA5C /* ar-music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ar-music.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		942FF79A1FAE4F5F0061DA5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		942FF79C1FAE4F5F0061DA5C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		942FF79E1FAE4F5F0061DA5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		942FF7A11FAE4F5F0061DA5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		942FF7A31FAE4F5F0061DA5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		942FF7A61FAE4F5F0061DA5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		942FF7A81FAE4F5F0061DA5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		948ED3161FAD7F86006A06B8 /* Frameworks */ = {
+		942FF7941FAE4F5F0061DA5C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,72 +37,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		948ED3101FAD7F86006A06B8 = {
+		942FF78E1FAE4F5F0061DA5C = {
 			isa = PBXGroup;
 			children = (
-				948ED31B1FAD7F86006A06B8 /* music-map */,
-				948ED31A1FAD7F86006A06B8 /* Products */,
+				942FF7991FAE4F5F0061DA5C /* ar-music */,
+				942FF7981FAE4F5F0061DA5C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		948ED31A1FAD7F86006A06B8 /* Products */ = {
+		942FF7981FAE4F5F0061DA5C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				948ED3191FAD7F86006A06B8 /* music-map.app */,
+				942FF7971FAE4F5F0061DA5C /* ar-music.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		948ED31B1FAD7F86006A06B8 /* music-map */ = {
+		942FF7991FAE4F5F0061DA5C /* ar-music */ = {
 			isa = PBXGroup;
 			children = (
-				948ED31C1FAD7F86006A06B8 /* AppDelegate.swift */,
-				948ED31E1FAD7F86006A06B8 /* ViewController.swift */,
-				948ED3201FAD7F86006A06B8 /* Main.storyboard */,
-				948ED3231FAD7F86006A06B8 /* Assets.xcassets */,
-				948ED3251FAD7F86006A06B8 /* LaunchScreen.storyboard */,
-				948ED3281FAD7F86006A06B8 /* Info.plist */,
+				942FF79A1FAE4F5F0061DA5C /* AppDelegate.swift */,
+				942FF79C1FAE4F5F0061DA5C /* art.scnassets */,
+				942FF79E1FAE4F5F0061DA5C /* ViewController.swift */,
+				942FF7A01FAE4F5F0061DA5C /* Main.storyboard */,
+				942FF7A31FAE4F5F0061DA5C /* Assets.xcassets */,
+				942FF7A51FAE4F5F0061DA5C /* LaunchScreen.storyboard */,
+				942FF7A81FAE4F5F0061DA5C /* Info.plist */,
 			);
-			path = "music-map";
+			path = "ar-music";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		948ED3181FAD7F86006A06B8 /* music-map */ = {
+		942FF7961FAE4F5F0061DA5C /* ar-music */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 948ED32B1FAD7F86006A06B8 /* Build configuration list for PBXNativeTarget "music-map" */;
+			buildConfigurationList = 942FF7AB1FAE4F5F0061DA5C /* Build configuration list for PBXNativeTarget "ar-music" */;
 			buildPhases = (
-				948ED3151FAD7F86006A06B8 /* Sources */,
-				948ED3161FAD7F86006A06B8 /* Frameworks */,
-				948ED3171FAD7F86006A06B8 /* Resources */,
+				942FF7931FAE4F5F0061DA5C /* Sources */,
+				942FF7941FAE4F5F0061DA5C /* Frameworks */,
+				942FF7951FAE4F5F0061DA5C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "music-map";
-			productName = "music-map";
-			productReference = 948ED3191FAD7F86006A06B8 /* music-map.app */;
+			name = "ar-music";
+			productName = "ar-music";
+			productReference = 942FF7971FAE4F5F0061DA5C /* ar-music.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		948ED3111FAD7F86006A06B8 /* Project object */ = {
+		942FF78F1FAE4F5F0061DA5C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = wildhackz17;
 				TargetAttributes = {
-					948ED3181FAD7F86006A06B8 = {
+					942FF7961FAE4F5F0061DA5C = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 948ED3141FAD7F86006A06B8 /* Build configuration list for PBXProject "music-map" */;
+			buildConfigurationList = 942FF7921FAE4F5F0061DA5C /* Build configuration list for PBXProject "ar-music" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -108,54 +111,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 948ED3101FAD7F86006A06B8;
-			productRefGroup = 948ED31A1FAD7F86006A06B8 /* Products */;
+			mainGroup = 942FF78E1FAE4F5F0061DA5C;
+			productRefGroup = 942FF7981FAE4F5F0061DA5C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				948ED3181FAD7F86006A06B8 /* music-map */,
+				942FF7961FAE4F5F0061DA5C /* ar-music */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		948ED3171FAD7F86006A06B8 /* Resources */ = {
+		942FF7951FAE4F5F0061DA5C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				948ED3271FAD7F86006A06B8 /* LaunchScreen.storyboard in Resources */,
-				948ED3241FAD7F86006A06B8 /* Assets.xcassets in Resources */,
-				948ED3221FAD7F86006A06B8 /* Main.storyboard in Resources */,
+				942FF79D1FAE4F5F0061DA5C /* art.scnassets in Resources */,
+				942FF7A71FAE4F5F0061DA5C /* LaunchScreen.storyboard in Resources */,
+				942FF7A41FAE4F5F0061DA5C /* Assets.xcassets in Resources */,
+				942FF7A21FAE4F5F0061DA5C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		948ED3151FAD7F86006A06B8 /* Sources */ = {
+		942FF7931FAE4F5F0061DA5C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				948ED31F1FAD7F86006A06B8 /* ViewController.swift in Sources */,
-				948ED31D1FAD7F86006A06B8 /* AppDelegate.swift in Sources */,
+				942FF79F1FAE4F5F0061DA5C /* ViewController.swift in Sources */,
+				942FF79B1FAE4F5F0061DA5C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		948ED3201FAD7F86006A06B8 /* Main.storyboard */ = {
+		942FF7A01FAE4F5F0061DA5C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				948ED3211FAD7F86006A06B8 /* Base */,
+				942FF7A11FAE4F5F0061DA5C /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		948ED3251FAD7F86006A06B8 /* LaunchScreen.storyboard */ = {
+		942FF7A51FAE4F5F0061DA5C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				948ED3261FAD7F86006A06B8 /* Base */,
+				942FF7A61FAE4F5F0061DA5C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -163,7 +167,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		948ED3291FAD7F86006A06B8 /* Debug */ = {
+		942FF7A91FAE4F5F0061DA5C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -220,7 +224,7 @@
 			};
 			name = Debug;
 		};
-		948ED32A1FAD7F86006A06B8 /* Release */ = {
+		942FF7AA1FAE4F5F0061DA5C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -270,30 +274,30 @@
 			};
 			name = Release;
 		};
-		948ED32C1FAD7F86006A06B8 /* Debug */ = {
+		942FF7AC1FAE4F5F0061DA5C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4PDLK42W78;
-				INFOPLIST_FILE = "music-map/Info.plist";
+				DEVELOPMENT_TEAM = QR3YW3B828;
+				INFOPLIST_FILE = "ar-music/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "my-music-map";
+				PRODUCT_BUNDLE_IDENTIFIER = "wildhackz17.ar-music";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		948ED32D1FAD7F86006A06B8 /* Release */ = {
+		942FF7AD1FAE4F5F0061DA5C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4PDLK42W78;
-				INFOPLIST_FILE = "music-map/Info.plist";
+				DEVELOPMENT_TEAM = QR3YW3B828;
+				INFOPLIST_FILE = "ar-music/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "my-music-map";
+				PRODUCT_BUNDLE_IDENTIFIER = "wildhackz17.ar-music";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -303,25 +307,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		948ED3141FAD7F86006A06B8 /* Build configuration list for PBXProject "music-map" */ = {
+		942FF7921FAE4F5F0061DA5C /* Build configuration list for PBXProject "ar-music" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				948ED3291FAD7F86006A06B8 /* Debug */,
-				948ED32A1FAD7F86006A06B8 /* Release */,
+				942FF7A91FAE4F5F0061DA5C /* Debug */,
+				942FF7AA1FAE4F5F0061DA5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		948ED32B1FAD7F86006A06B8 /* Build configuration list for PBXNativeTarget "music-map" */ = {
+		942FF7AB1FAE4F5F0061DA5C /* Build configuration list for PBXNativeTarget "ar-music" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				948ED32C1FAD7F86006A06B8 /* Debug */,
-				948ED32D1FAD7F86006A06B8 /* Release */,
+				942FF7AC1FAE4F5F0061DA5C /* Debug */,
+				942FF7AD1FAE4F5F0061DA5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 948ED3111FAD7F86006A06B8 /* Project object */;
+	rootObject = 942FF78F1FAE4F5F0061DA5C /* Project object */;
 }

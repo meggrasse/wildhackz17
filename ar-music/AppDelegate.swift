@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  music-map
+//  ar-music
 //
-//  Created by Meg on 11/3/17.
+//  Created by Meg on 11/4/17.
 //  Copyright © 2017 wildhackz17. All rights reserved.
 //
 
