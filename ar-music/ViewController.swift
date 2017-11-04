@@ -7,20 +7,19 @@
 //
 
 import UIKit
-import SceneKit
-import ARKit
 import MediaPlayer
 import CoreLocation
 import ARCL
 
-class ViewController: UIViewController, ARSCNViewDelegate {
+class ViewController: UIViewController {
+    
     //set up what a musicData is (spoiler: it's time + song + location)
     struct MusicData {
         var time : Date?
         var song : MPMediaItem?
-        var location : CLLocationCoordinate2D?
+        var location : CLLocation?
 
-        init(time nowTime : Date?, song nowSong : MPMediaItem?, location nowLocation : CLLocationCoordinate2D?){
+        init(time nowTime : Date?, song nowSong : MPMediaItem?, location nowLocation : CLLocation?){
             time = nowTime
             song = nowSong
             location = nowLocation
@@ -30,13 +29,14 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     var musicHistory = [MusicData]()
     let locationManager = CLLocationManager()
 
-    @IBOutlet var sceneView: ARSCNView!
+    var sceneLocationView = SceneLocationView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Set the view's delegate
-        sceneView.delegate = self
+        sceneLocationView.run()
+        view.addSubview(sceneLocationView)
+        sceneLocationView.frame = view.bounds
 
         // when the view loads, begin checking for when the song changes
         MPMusicPlayerController.systemMusicPlayer.beginGeneratingPlaybackNotifications()
@@ -58,47 +58,20 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        // Create a session configuration
-        let configuration = ARWorldTrackingConfiguration()
-
-        // Run the view's session
-        sceneView.session.run(configuration)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        
-        // Pause the view's session
-        sceneView.session.pause()
-    }
-    
     @objc func trackChanged() {
         let nowPlaying = MPMusicPlayerController.systemMusicPlayer.nowPlayingItem
-        let artwork = nowPlaying?.artwork?.image(at: CGSize(width: 50, height: 50))
-        let coordinates = locationManager.location?.coordinate
+        let artwork = nowPlaying?.artwork?.image(at: CGSize(width: 5, height: 5))
+        let location = locationManager.location
         if let nowPlayingItem = nowPlaying {
-            let data = MusicData(time : Date(), song : nowPlayingItem, location : coordinates)
+            let data = MusicData(time : Date(), song : nowPlayingItem, location : location)
             musicHistory.append(data)
         }
-
-        let scene = SCNScene()
-        let box = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0.0)
-
-        // add artwork as material for box
-        let material = SCNMaterial()
-        material.diffuse.contents = artwork
-        box.firstMaterial = material
-
-        let node = SCNNode(geometry: box)
-
-        // place right in front of camera
-        node.position = SCNVector3Make(0, 0, -0.5);
-
-        scene.rootNode.addChildNode(node)
-
-        sceneView.scene = scene
+        
+        if let userLocation = musicHistory.last?.location {
+            if let realArtwork = artwork {
+                let locationAnnotationNode = LocationAnnotationNode(location: userLocation, image: realArtwork)
+                sceneLocationView.addLocationNodeWithConfirmedLocation(locationNode: locationAnnotationNode)
+            }
+        }
     }
 }
