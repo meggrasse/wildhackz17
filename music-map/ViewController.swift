@@ -10,20 +10,17 @@ import UIKit
 import MediaPlayer
 import CoreLocation
 
-class ViewController: UIViewController, CLLocationManagerDelegate {
+class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     
-    var trackLocationDict = [MPMediaItem:CLLocation]()
+    var trackLocationDict = [MPMediaItem:CLLocationCoordinate2D]()
     let locationManager = CLLocationManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        label.text = "Hello World"
-//
+
         MPMusicPlayerController.systemMusicPlayer.beginGeneratingPlaybackNotifications()
         NotificationCenter.default.addObserver(self, selector: #selector(trackChanged), name: .MPMusicPlayerControllerNowPlayingItemDidChange, object: nil)
-        locationManager.delegate = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -34,6 +31,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 break
             
             case .restricted, .denied:
+                print("User denied location request")
                 break
             
             case .authorizedWhenInUse, .authorizedAlways:
@@ -42,25 +40,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
 
     @objc func trackChanged() {
-        print ("The track changed")
         let nowPlaying = MPMusicPlayerController.systemMusicPlayer.nowPlayingItem
-        locationManager.requestLocation()
         
-        
-        if let nowPlayingItem = nowPlaying {
-            trackLocationDict[nowPlayingItem] = nil
+        let coordinates = locationManager.location?.coordinate
+        if let nowPlayingItem = nowPlaying{
+            trackLocationDict[nowPlayingItem] = coordinates
         }
-        print(trackLocationDict)
-    }
-    
-    func locationManager(_ manager: CLLocationManager,
-                         didUpdateLocations locations: [CLLocation]){
-        print ("Got location")
-    }
-    
-    func locationManager(_ manager: CLLocationManager,
-                         didFailWithError error: Error) {
-        print("failing")
     }
 }
 
