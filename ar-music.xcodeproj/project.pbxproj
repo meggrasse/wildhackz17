@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D8E0D69BAEAC88804BA1EAF /* Pods_ar_music.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D5F661ABF7E4C331A58E233 /* Pods_ar_music.framework */; };
 		942FF79B1FAE4F5F0061DA5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942FF79A1FAE4F5F0061DA5C /* AppDelegate.swift */; };
 		942FF79D1FAE4F5F0061DA5C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 942FF79C1FAE4F5F0061DA5C /* art.scnassets */; };
 		942FF79F1FAE4F5F0061DA5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942FF79E1FAE4F5F0061DA5C /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2DD4C96E0300CC1D9F08A37F /* Pods-ar-music.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ar-music.release.xcconfig"; path = "Pods/Target Support Files/Pods-ar-music/Pods-ar-music.release.xcconfig"; sourceTree = "<group>"; };
+		6D5F661ABF7E4C331A58E233 /* Pods_ar_music.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ar_music.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		942FF7971FAE4F5F0061DA5C /* ar-music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ar-music.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		942FF79A1FAE4F5F0061DA5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		942FF79C1FAE4F5F0061DA5C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		942FF7A31FAE4F5F0061DA5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		942FF7A61FAE4F5F0061DA5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		942FF7A81FAE4F5F0061DA5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB53451A9E17A4254BD9F578 /* Pods-ar-music.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ar-music.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ar-music/Pods-ar-music.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D8E0D69BAEAC88804BA1EAF /* Pods_ar_music.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				942FF7991FAE4F5F0061DA5C /* ar-music */,
 				942FF7981FAE4F5F0061DA5C /* Products */,
+				DE39E8E73839504DC6C5FA82 /* Pods */,
+				96DE2085275E50F0660A837F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = "ar-music";
 			sourceTree = "<group>";
 		};
+		96DE2085275E50F0660A837F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D5F661ABF7E4C331A58E233 /* Pods_ar_music.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE39E8E73839504DC6C5FA82 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB53451A9E17A4254BD9F578 /* Pods-ar-music.debug.xcconfig */,
+				2DD4C96E0300CC1D9F08A37F /* Pods-ar-music.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 942FF7AB1FAE4F5F0061DA5C /* Build configuration list for PBXNativeTarget "ar-music" */;
 			buildPhases = (
+				83C35A4D839D947A855380CA /* [CP] Check Pods Manifest.lock */,
 				942FF7931FAE4F5F0061DA5C /* Sources */,
 				942FF7941FAE4F5F0061DA5C /* Frameworks */,
 				942FF7951FAE4F5F0061DA5C /* Resources */,
+				CFC3A95E1EA688EE8ABACEF2 /* [CP] Embed Pods Frameworks */,
+				36F0972CF5604DEC8A5D8F95 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,6 +161,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36F0972CF5604DEC8A5D8F95 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ar-music/Pods-ar-music-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83C35A4D839D947A855380CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ar-music-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFC3A95E1EA688EE8ABACEF2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ar-music/Pods-ar-music-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ARCL/ARCL.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ARCL.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ar-music/Pods-ar-music-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		942FF7931FAE4F5F0061DA5C /* Sources */ = {
@@ -276,13 +357,14 @@
 		};
 		942FF7AC1FAE4F5F0061DA5C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB53451A9E17A4254BD9F578 /* Pods-ar-music.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QR3YW3B828;
+				DEVELOPMENT_TEAM = 4PDLK42W78;
 				INFOPLIST_FILE = "ar-music/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "wildhackz17.ar-music";
+				PRODUCT_BUNDLE_IDENTIFIER = "wildhackz17.ar-music-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -291,13 +373,14 @@
 		};
 		942FF7AD1FAE4F5F0061DA5C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DD4C96E0300CC1D9F08A37F /* Pods-ar-music.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QR3YW3B828;
+				DEVELOPMENT_TEAM = 4PDLK42W78;
 				INFOPLIST_FILE = "ar-music/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "wildhackz17.ar-music";
+				PRODUCT_BUNDLE_IDENTIFIER = "wildhackz17.ar-music-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
