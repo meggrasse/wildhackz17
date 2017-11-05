@@ -14,6 +14,7 @@
 		942FF7A21FAE4F5F0061DA5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942FF7A01FAE4F5F0061DA5C /* Main.storyboard */; };
 		942FF7A41FAE4F5F0061DA5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 942FF7A31FAE4F5F0061DA5C /* Assets.xcassets */; };
 		942FF7A71FAE4F5F0061DA5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942FF7A51FAE4F5F0061DA5C /* LaunchScreen.storyboard */; };
+		943875261FAE8B5B00EF4EA1 /* LocationAnnotationBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943875251FAE8B5B00EF4EA1 /* LocationAnnotationBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		942FF7A31FAE4F5F0061DA5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		942FF7A61FAE4F5F0061DA5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		942FF7A81FAE4F5F0061DA5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		943875251FAE8B5B00EF4EA1 /* LocationAnnotationBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAnnotationBox.swift; sourceTree = "<group>"; };
 		DB53451A9E17A4254BD9F578 /* Pods-ar-music.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ar-music.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ar-music/Pods-ar-music.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,6 +47,7 @@
 		942FF78E1FAE4F5F0061DA5C = {
 			isa = PBXGroup;
 			children = (
+				943875251FAE8B5B00EF4EA1 /* LocationAnnotationBox.swift */,
 				942FF7991FAE4F5F0061DA5C /* ar-music */,
 				942FF7981FAE4F5F0061DA5C /* Products */,
 				DE39E8E73839504DC6C5FA82 /* Pods */,
@@ -223,6 +226,7 @@
 			files = (
 				942FF79F1FAE4F5F0061DA5C /* ViewController.swift in Sources */,
 				942FF79B1FAE4F5F0061DA5C /* AppDelegate.swift in Sources */,
+				943875261FAE8B5B00EF4EA1 /* LocationAnnotationBox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

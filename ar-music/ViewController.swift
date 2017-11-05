@@ -69,8 +69,8 @@ class ViewController: UIViewController {
         
         if let userLocation = musicHistory.last?.location {
             if let realArtwork = artwork {
-                let locationAnnotationNode = LocationAnnotationNode(location: userLocation, image: realArtwork)
-                sceneLocationView.addLocationNodeWithConfirmedLocation(locationNode: locationAnnotationNode)
+                let locationAnnotationBox = LocationAnnotationNode(location: userLocation, image: realArtwork)
+                sceneLocationView.addLocationNodeWithConfirmedLocation(locationNode: locationAnnotationBox)
             }
         }
     }
