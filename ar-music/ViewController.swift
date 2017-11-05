@@ -46,10 +46,10 @@ class ViewController: UIViewController {
         label.font = UIFont(name:"HelveticaNeue-Bold", size: 16.0)
         label.frame.origin = CGPoint(x: 0, y: self.view.bounds.maxY - 75)
         label.frame.size = CGSize(width: self.view.frame.width, height: 75)
-        label.backgroundColor = UIColor(displayP3Red: 255, green: 255, blue: 255, alpha: 0.4)
         label.textAlignment = .center
         label.layer.masksToBounds = true;
         label.layer.cornerRadius = 8.0;
+        self.label.alpha = 0
         self.view.addSubview(label)
         
         // when the view loads, begin checking for when the song changes
@@ -106,12 +106,22 @@ class ViewController: UIViewController {
             if let geo = results.node.geometry {
                 let data = nodeHistoryDict[geo]
                 if let title = data?.song?.title, let artist = data?.song?.artist, let album = data?.song?.albumTitle, let time = data?.time {
-                        let dateFormatter = DateFormatter()
-                        dateFormatter.dateFormat = "EEEE, MMMM dd, yyyy 'at' HH:mm"
-                        let dateString: String = dateFormatter.string(from: time)
-                        let labelText = title + "\n" + artist + " — " + album + "\n" + dateString
-                        self.label.text = labelText
-                }
+                    let dateFormatter = DateFormatter()
+                    dateFormatter.dateFormat = "EEEE, MMMM dd, yyyy 'at' HH:mm"
+                    let dateString: String = dateFormatter.string(from: time)
+                    let labelText = title + "\n" + artist + " — " + album + "\n" + dateString
+                    self.label.text = labelText
+                    UIView.animate(withDuration: 0.2, animations: {
+                        self.label.alpha = 1
+                        self.label.backgroundColor = UIColor.white.withAlphaComponent(0.25)
+                    }, completion: { (finished) in
+                        UIView.animate(withDuration: 0.2, delay: 5, animations: {
+                            self.label.alpha = 0
+                        }, completion: { (finished) in
+                            self.label.backgroundColor = UIColor.white.withAlphaComponent(0.0)
+                        }
+                    )}
+                )}
             }
         }
     }
