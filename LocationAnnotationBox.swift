@@ -19,7 +19,7 @@ class LocationAnnotationBox: LocationNode {
     init(location: CLLocation?, image: UIImage) {
         self.image = image
         
-        let box = SCNBox(width: 0.5, height: 0.5, length: 0.5, chamferRadius: 0.01)
+        let box = SCNBox(width: 0.5, height: 0.5, length: 0.01, chamferRadius: 0.05)
        
         let material = SCNMaterial()
         material.diffuse.contents = image
@@ -29,11 +29,7 @@ class LocationAnnotationBox: LocationNode {
         self.annotationBoxNode.geometry = box
         
         super.init(location: location)
-        
-        let billboardConstraint = SCNBillboardConstraint()
-        billboardConstraint.freeAxes = SCNBillboardAxis.Y
-        constraints = [billboardConstraint]
-        
+
         addChildNode(annotationBoxNode)
     }
     
