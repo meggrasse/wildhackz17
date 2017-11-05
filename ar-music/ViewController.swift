@@ -106,8 +106,11 @@ class ViewController: UIViewController {
             if let geo = results.node.geometry {
                 let data = nodeHistoryDict[geo]
                 if let title = data?.song?.title, let artist = data?.song?.artist, let album = data?.song?.albumTitle, let time = data?.time {
-                    let labelText = title + "\n" + artist + " — " + album + "\n" + time.description(with: .current)
-                    self.label.text = labelText
+                        let dateFormatter = DateFormatter()
+                        dateFormatter.dateFormat = "EEEE, MMMM dd, yyyy 'at' HH:mm"
+                        let dateString: String = dateFormatter.string(from: time)
+                        let labelText = title + "\n" + artist + " — " + album + "\n" + dateString
+                        self.label.text = labelText
                 }
             }
         }
