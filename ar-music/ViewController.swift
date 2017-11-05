@@ -8,6 +8,7 @@
 
 import UIKit
 import MediaPlayer
+import ARKit
 import CoreLocation
 import ARCL
 
@@ -69,9 +70,20 @@ class ViewController: UIViewController {
         
         if let userLocation = musicHistory.last?.location {
             if let realArtwork = artwork {
-                let locationAnnotationNode = LocationAnnotationNode(location: userLocation, image: realArtwork)
-                sceneLocationView.addLocationNodeWithConfirmedLocation(locationNode: locationAnnotationNode)
+                let locationAnnotationBox = LocationAnnotationBox(location: userLocation, image: realArtwork)
+                self.addLocationNode(locationNode: locationAnnotationBox)
             }
         }
+    }
+        
+    func addLocationNode(locationNode: LocationNode) {
+        guard let currentPosition = sceneLocationView.currentScenePosition(),
+            let _ = locationNode.location,
+            let sceneNode = sceneLocationView.sceneNode else {
+                return
+        }
+        
+        locationNode.position = currentPosition
+        sceneNode.addChildNode(locationNode)
     }
 }
